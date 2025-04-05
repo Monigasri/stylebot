@@ -1,0 +1,82 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8d7da;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  background-color: white;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.outfit-section {
+  background-color: #eef;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.outfits {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.outfit img {
+  width: 120px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
+}

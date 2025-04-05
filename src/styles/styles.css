@@ -1,0 +1,404 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #fef9f6, #f4f0ed);
+}
+
+/*login page*/
+
+.login-wrapper {
+  background-color: #e9eff2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-left {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-left h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.login-left p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.google-login:hover {
+  background-color: #f5f5f5;
+}
+
+.google-login i {
+  font-size: 18px;
+  color: black; /* Google red */
+}
+
+
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #888;
+  font-size: 14px;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #ccc;
+  width: 40%;
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.login-form input {
+  width: 95%;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.login-button {
+  background-color: #2867B2;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.signup-link {
+  font-size: 13px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.login-right {
+  flex: 1;
+  background-color: #f2f2f2;
+}
+
+.login-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+
+
+/*Home page*/
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9fc;
+  color: #1f1f39;
+}
+
+.homepage {
+  width: 100%;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f1f39;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+  color: #4f4f5a;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+  background-color: #f9f9fc;
+}
+
+.hero-text {
+  flex: 1;
+  margin-bottom: 400px;
+}
+
+.hero-label {
+  font-size: 0.9rem;
+  color: #7a7ab3;
+  /* margin-bottom: 0.5rem; */
+}
+
+.hero-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  /* margin-bottom: 1rem; */
+  color: #1f1f39;
+}
+
+.hero-subtext {
+  font-size: 1rem;
+  color: #5a5a77;
+  /* margin-bottom: 2rem; */
+  max-width: 500px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: #2867B2;
+  color: white;
+  box-shadow: 0 2px 8px #5996e1;
+}
+
+.secondary {
+  background-color: white;
+  color: #1f1f39;
+  border: 1px solid #e0e0f0;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 330px;
+}
+
+.styled-image {
+  width: 450px;
+  border-radius: 2rem;
+  height: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-text, .hero-image {
+    flex: unset;
+    width: 100%;
+  }
+  .hero-heading {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+.chatbot-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.sidebar {
+  width: 280px;
+  background: #2867B2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.sample-text {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.user-card {
+  background: white;
+  color: black;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user-card img{
+  margin-bottom: -5px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chat-area {
+  flex: 1;
+  background: #f9f9fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.chat-message.user {
+  justify-content: flex-end;
+}
+
+.chat-message.bot {
+  justify-content: flex-start;
+}
+
+.chat-avatar {
+  width: 60px;
+  height:  60px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.message-bubble {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 2px 3px 0 #d4d4d4;
+  max-width: 60%;
+}
+
+.input-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-top: 10px;
+  background: white;
+}
+
+.input-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.input-icons button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}

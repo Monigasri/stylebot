@@ -1,13 +1,15 @@
 
-
-// pages/Home.js
 import React, { useState, useEffect, useCallback } from "react";
- import "../styles/styles.css";
- import { useNavigate } from "react-router-dom";
+import "../styles/styles.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [outfits, setOutfits] = useState([]);
   const navigate = useNavigate();
+
+  const handleExploreClick = () => {
+    navigate("/collection");
+  };
 
   const fetchOutfits = useCallback(async () => {
     try {
@@ -33,7 +35,7 @@ const Home = () => {
         <ul className="nav-links">
           <li onClick={() => navigate("/home")}>Home</li>
           <li onClick={() => navigate("/chatbot")}>Chatbot</li>
-          <li>Your Cart</li>
+          <li onClick={() => navigate("/cart")}>Your Cart</li>
         </ul>
       </nav>
 
@@ -52,7 +54,9 @@ const Home = () => {
             <button onClick={() => navigate("/chatbot")} className="btn primary">
               Try Chatbot →
             </button>
-            <button className="btn secondary">Explore Collection</button>
+            <button className="btn secondary" onClick={handleExploreClick}>
+              Explore Collection
+            </button>
           </div>
         </div>
 

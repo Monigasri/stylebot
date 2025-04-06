@@ -1,6 +1,6 @@
-
 import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
+import ReactMarkdown from "react-markdown"; // ✅ Import markdown renderer
 import "../styles/styles.css";
 
 const socket = io("http://localhost:5001");
@@ -19,7 +19,7 @@ const Chatbot = () => {
 
   const sendMessage = () => {
     if (!input.trim()) return;
-    socket.emit("sendMessage", input); // just emit, no need to setMessages here
+    socket.emit("sendMessage", input);
     setInput("");
   };
 
@@ -27,7 +27,7 @@ const Chatbot = () => {
     <div className="chatbot-wrapper">
       {/* Sidebar */}
       <aside className="sidebar">
-        <div className="sample-text">History</div>
+    
         <div className="user-card">
           <img src="user-profile.png" alt="User" className="user-avatar" />
           <div>
@@ -42,13 +42,13 @@ const Chatbot = () => {
           {messages.map((msg, index) => (
             <div
               key={index}
-              className={`chat-message ${msg.sender === "User" ? "user" : "bot"}`}
+              className={`chat-message ${msg.sender === "User" ? "user" : "bot"}`} // ✅ Fixed className
             >
               {msg.sender !== "User" && (
                 <img src="bot-profile.png" alt="Bot" className="chat-avatar" />
               )}
               <div className="message-bubble">
-                <p>{msg.text}</p>
+                <ReactMarkdown>{msg.text}</ReactMarkdown>
               </div>
               {msg.sender === "User" && (
                 <img src="user-profile.png" alt="User" className="chat-avatar" />
